@@ -272,7 +272,7 @@
         </section>
 
         <section id="projects">
-            <h2>Porjects</h2>
+            <h2>Projects</h2>
             <h3>Biology & Chemistry</h3>
             <ul>
                 <li> (project 1)</li>
