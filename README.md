@@ -344,6 +344,10 @@
                     <a href="mailto:coenhowerter@gmail.com">coenhowerter@gmail.com</a>
                 </div>
                 <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <a href="tel:+15616138675">+1 (561) 613-8675</a>
+                </div>
+                <div class="contact-item">
                     <strong>LinkedIn:</strong>
                     <a href="https://www.linkedin.com/in/coen-howerter/" target="_blank">LinkedIn</a>
                 </div>
@@ -355,10 +359,7 @@
                     <strong>University:</strong>
                     <span>Florida Institute of Technology</span>
                 </div>
-                <div class="contact-item">
-                    <strong>Phone:</strong>
-                    <a href="tel:+15616138675">+1 (561) 613-8675</a>
-                </div>
+
             </div>
         </section>
     </div>
