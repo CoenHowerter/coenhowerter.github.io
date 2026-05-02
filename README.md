@@ -70,7 +70,8 @@
             background: rgba(26, 31, 58, 0.9);
             backdrop-filter: blur(10px);
             padding: 1rem 0;
-            position: relative;
+            position: sticky; /* FIX: sticky keeps nav visible while scrolling */
+            top: 0;
             z-index: 100;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
@@ -90,12 +91,13 @@
             padding: 0.5rem 1rem;
             border-radius: 5px;
             transition: all 0.3s;
+            display: inline-block; /* FIX: moved here so transform works consistently */
         }
 
         nav a:hover {
             background: rgba(100, 200, 255, 0.2);
             transform: translateY(-2px);
-            display: inline-block;
+            /* FIX: removed "display: inline-block" from here — it belongs on the base rule */
         }
 
         /* Main Content */
@@ -115,6 +117,7 @@
             border-radius: 10px;
             border: 1px solid rgba(100, 200, 255, 0.2);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            scroll-margin-top: 70px; /* FIX: prevents sticky nav from covering section headings on anchor jump */
         }
 
         h2 {
@@ -219,12 +222,13 @@
 
         footer p {
             color: #a0d8ff;
+            margin-bottom: 0; /* FIX: removes extra bottom margin inside footer */
         }
 
         /* Mobile */
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
-            nav ul { flex-direction: column; gap: 0.5rem; }
+            nav ul { flex-direction: column; align-items: center; gap: 0.5rem; } /* FIX: added align-items center for proper centering on mobile */
             .container { padding: 1rem; }
         }
     </style>
@@ -260,12 +264,13 @@
             <div class="project-card">
                 <h3>Project Alpha</h3>
                 <p>A full-stack web application that does something amazing. Built with modern technologies and a focus on user experience.</p>
-                <p><a href="https://github.com/yourusername/project-alpha">View on GitHub →</a></p>
+                <p><a href="https://github.com/yourusername/project-alpha" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
+                <!-- FIX: added target="_blank" + rel="noopener noreferrer" for security on external links -->
             </div>
             <div class="project-card">
                 <h3>Project Beta</h3>
                 <p>An open-source tool that solves a real-world problem. Contributions welcome!</p>
-                <p><a href="https://github.com/yourusername/project-beta">View on GitHub →</a></p>
+                <p><a href="https://github.com/yourusername/project-beta" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
             </div>
         </section>
 
@@ -292,11 +297,11 @@
                 </div>
                 <div class="contact-item">
                     <span>🐙</span>
-                    <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
                 </div>
                 <div class="contact-item">
                     <span>💼</span>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
                 </div>
             </div>
         </section>
@@ -308,6 +313,7 @@
     </footer>
 
     <script>
+        // Star background
         const starsContainer = document.getElementById('stars');
         for (let i = 0; i < 120; i++) {
             const star = document.createElement('div');
@@ -316,6 +322,15 @@
             star.style.cssText = `width:${size}px; height:${size}px; top:${Math.random() * 100}%; left:${Math.random() * 100}%; animation-delay:${Math.random() * 3}s; animation-duration:${2 + Math.random() * 3}s;`;
             starsContainer.appendChild(star);
         }
+
+        // FIX: smooth scrolling for nav anchor links
+        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
     </script>
 
 </body>
