@@ -224,3 +224,5 @@ footer p {
         padding: 1rem;
     }
 }
+
+<html></html>
