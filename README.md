@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Coen Howerter</title>
     <style>
         * {
             box-sizing: border-box;
@@ -238,7 +238,7 @@
     <div class="stars" id="stars"></div>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>Coen Howerter</h1>
         <p>Software Developer &amp; Space Enthusiast</p>
     </header>
 
