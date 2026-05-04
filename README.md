@@ -767,7 +767,7 @@
             <aside class="profile-card">
                 <h2>Coen Howerter</h2>
                 <p class="role">Astrobiologist & Physicist</p>
-                <img src="https://coenhowerter.github.io/DSC_4398.jpg" alt="Coen Howerter" class="profile-img">
+                <img src="https://coenhowerter.github.io/profile_sm.jpg" alt="Coen Howerter" class="profile-img">
 
                 <div class="contact-info">
                     <p>📧 coenhowerter@gmail.com</p>
