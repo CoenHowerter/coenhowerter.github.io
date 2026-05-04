@@ -771,7 +771,6 @@
 
                 <div class="contact-info">
                     <p>📧 coenhowerter@gmail.com</p>
-                    <p>📱 +1(561)-613-8675</p>
                 </div>
 
                 <div class="social-links">
@@ -794,65 +793,18 @@
 
                 <!-- Personal Info -->
                 <span class="section-badge" style="margin-top: 40px;">📄 Resume</span>
-                <h2 class="section-title">STEM Tutoring</h2>
+                <h2 class="section-title">STEM Tutoring - Mission Statement</h2>
                 <p style="color: #999; margin-bottom: 30px;">
-                     Since starting my journey as an independent creator and soon working as an entrepreneur, I've done remote work for organizations, consulted for initial-ups, and collaborated with respected people to provide best product solutions.
+                     My mission is to eliminate the financial barrier for STEM education in youth through non-cost online tutoring. 
                 </p>
-
-                <h3 style="margin-bottom: 20px;">Personal Info:</h3>
-                <div class="info-grid">
-                    <div class="info-item">First Name: Coen</div>
-                    <div class="info-item">Last Name: Howerter</div>
-                    <div class="info-item">Email: coenhowerter@gmail.com</div>
-                    <div class="info-item">Nationality: Indonesia</div>
-                    <div class="info-item">Education: Undergraduate</div>
-                    <div class="info-item">Languages: English</div>
-                </div>
 
                 <!-- Working Experience -->
                 <h2 class="section-title">Working <span>Experience</span></h2>
 
                 <div class="experience-list">
                     <div class="experience-item">
-                        <p class="year">2022 - 2025</p>
-                        <h3>Framer Designer & Developer</h3>
-                        <p class="company">Uklo Studio ITC Company</p>
-                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 90%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>90%</span>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <p class="year">2020 - 2022</p>
-                        <h3>Web Application Manager</h3>
-                        <p class="company">Uklo Company</p>
-                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>80%</span>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <p class="year">2019 - 2015</p>
-                        <h3>Front-End WordPress Developer</h3>
-                        <p class="company">Uklo Company</p>
-                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 75%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>75%</span>
-                        </div>
+                        <p class="year">2025 - Present</p>
+                        <h3>STEM Tutor</h3>
                     </div>
                 </div>
 
@@ -861,45 +813,20 @@
 
                 <div class="experience-list">
                     <div class="experience-item">
-                        <p class="year">May 2015-2020</p>
-                        <h3>Software Engineer</h3>
-                        <p class="company">Carnegie Mellon University</p>
-                        <p style="color: #999;">We give women and minorities all over America the skills and educational training they need to obtain a livable livelihood of achievement and pursue the career goals...</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 95%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>95%</span>
-                        </div>
+                        <p class="year">May 2025-Present</p>
+                        <h3>Astrobiology & Physics</h3>
+                        <p class="company">Florida Institute of Technology</p>
+
+                    <div class="experience-item">
+                        <p class="year">2022-2025</p>
+                        <h3>Associates of Arts</h3>
+                        <p class="company">Eastern Florida State College</p>
                     </div>
 
                     <div class="experience-item">
-                        <p class="year">2012-2015</p>
-                        <h3>Bachelor of Computer Science</h3>
-                        <p class="company">Ultra Luna Company</p>
-                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 80%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>80%</span>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <p class="year">2010-2013</p>
-                        <h3>Masters of Sciences</h3>
-                        <p class="company">University of Oregon</p>
-                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 85%;"></div>
-                        </div>
-                        <div class="progress-label">
-                            <span>Performance</span>
-                            <span>85%</span>
-                        </div>
+                        <p class="year">2021-2025</p>
+                        <h3>High School Diploma</h3>
+                        <p class="company">Satellite High School</p>
                     </div>
                 </div>
 
@@ -1113,23 +1040,7 @@
                 <span class="section-badge" style="margin-top: 60px;">📞 Contact</span>
                 <h2 class="section-title">Let's Work <span>Together!</span></h2>
 
-                <form class="contact-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <input type="text" placeholder="Enter Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Enter Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="url" placeholder="Website URL">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Enter Your Message"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
+
             </main>
         </div>
     </div>
@@ -1137,7 +1048,7 @@
     <!-- Footer -->
     <footer class="container">
         <div class="logo">HOWERTER</div>
-        <p>Copyright © HOWERTER © 2025-2026. All rights reserved</p>
+        <p>HOWERTER</p>
     </footer>
 
     <script>
