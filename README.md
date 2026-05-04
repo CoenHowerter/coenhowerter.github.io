@@ -3,335 +3,1165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coen Howerter</title>
+    <title>Coen Howerter - Software Developer Portfolio</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
             line-height: 1.6;
-            color: #e0e0e0;
-            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1419 100%);
-            min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
         }
 
-        /* Star Animation Background */
-        .stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
+        body.light-mode {
+            background-color: #f5f5f5;
+            color: #1a1a1a;
         }
 
-        .star {
-            position: absolute;
-            background: white;
-            border-radius: 50%;
-            animation: twinkle 3s infinite;
-        }
-
-        @keyframes twinkle {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         /* Header */
         header {
-            background: rgba(10, 14, 39, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        body.light-mode header {
+            border-bottom-color: #ddd;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4ff00;
+            letter-spacing: 2px;
+        }
+
+        body.light-mode .logo {
+            color: #000;
+        }
+
+        .time {
+            font-size: 24px;
+            color: #d4ff00;
+        }
+
+        body.light-mode .time {
+            color: #000;
+        }
+
+        .dark-light {
+            padding: 8px 16px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.light-mode .dark-light {
+            background-color: #e0e0e0;
+            border-color: #ccc;
+            color: #000;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .profile-card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
             text-align: center;
-            border-bottom: 2px solid rgba(100, 200, 255, 0.3);
-            position: relative;
-            z-index: 1;
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #64c8ff;
-            margin-bottom: 0.5rem;
-            text-shadow: 0 0 20px rgba(100, 200, 255, 0.5);
+        body.light-mode .profile-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
         }
 
-        header p {
-            font-size: 1.2rem;
-            color: #a0d8ff;
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        /* Navigation */
-        nav {
-            background: rgba(26, 31, 58, 0.9);
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            position: sticky; /* FIX: sticky keeps nav visible while scrolling */
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        .profile-card h2 {
+            font-size: 20px;
+            margin-bottom: 5px;
         }
 
-        nav ul {
-            list-style: none;
+        .profile-card .role {
+            color: #d4ff00;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        body.light-mode .profile-card .role {
+            color: #000;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            margin: 8px 0;
+            color: #ccc;
+        }
+
+        .social-links {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
+            gap: 10px;
+            margin: 20px 0;
         }
 
-        nav a {
-            color: #64c8ff;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
+        .social-links a {
+            width: 35px;
+            height: 35px;
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 5px;
-            transition: all 0.3s;
-            display: inline-block; /* FIX: moved here so transform works consistently */
+            color: #fff;
+            text-decoration: none;
         }
 
-        nav a:hover {
-            background: rgba(100, 200, 255, 0.2);
-            transform: translateY(-2px);
-            /* FIX: removed "display: inline-block" from here — it belongs on the base rule */
+        body.light-mode .social-links a {
+            background: #e0e0e0;
+            color: #000;
+        }
+
+        .btn-download {
+            width: 100%;
+            padding: 12px;
+            background: #d4ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
         }
 
         /* Main Content */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-            position: relative;
-            z-index: 1;
+        .main-content {
+            padding: 20px;
         }
 
-        section {
-            background: rgba(26, 31, 58, 0.7);
-            backdrop-filter: blur(10px);
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 10px;
-            border: 1px solid rgba(100, 200, 255, 0.2);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-            scroll-margin-top: 70px; /* FIX: prevents sticky nav from covering section headings on anchor jump */
-        }
-
-        h2 {
-            color: #64c8ff;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            border-bottom: 2px solid rgba(100, 200, 255, 0.3);
-            padding-bottom: 0.5rem;
-        }
-
-        h3 {
-            color: #a0d8ff;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Project Cards */
-        .project-card {
-            background: rgba(15, 20, 40, 0.6);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid rgba(100, 200, 255, 0.2);
-            transition: all 0.3s;
-            margin-top: 1.5rem;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(100, 200, 255, 0.2);
-            border-color: #64c8ff;
-        }
-
-        .project-card a {
-            color: #64c8ff;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid rgba(100, 200, 255, 0.3);
-            transition: all 0.3s;
-        }
-
-        .project-card a:hover {
-            color: #a0d8ff;
-            border-bottom-color: #a0d8ff;
-        }
-
-        /* Skills */
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .skill-tag {
-            background: rgba(100, 200, 255, 0.2);
-            color: #64c8ff;
-            padding: 0.5rem 1rem;
+        .section-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #2a2a2a;
+            border: 1px solid #444;
             border-radius: 20px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(100, 200, 255, 0.3);
+            font-size: 12px;
+            margin-bottom: 20px;
         }
 
-        /* Contact */
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
+        body.light-mode .section-badge {
+            background: #e0e0e0;
+            border-color: #ccc;
+            color: #000;
         }
 
-        .contact-item {
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            color: #d4ff00;
+        }
+
+        body.light-mode .section-title span {
+            color: #000;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .stat-item h3 {
+            font-size: 32px;
+            color: #d4ff00;
+            margin-bottom: 5px;
+        }
+
+        body.light-mode .stat-item h3 {
+            color: #000;
+        }
+
+        .stat-item p {
+            font-size: 14px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        /* Personal Info */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .info-item {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 10px;
         }
 
-        .contact-item a {
-            color: #64c8ff;
-            text-decoration: none;
-            transition: color 0.3s;
+        .info-item::before {
+            content: "✓";
+            color: #d4ff00;
+            font-weight: bold;
         }
 
-        .contact-item a:hover {
-            color: #a0d8ff;
+        body.light-mode .info-item::before {
+            color: #000;
+        }
+
+        .btn-hire {
+            padding: 12px 30px;
+            background: #d4ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+
+        /* Work Experience */
+        .experience-list {
+            margin: 30px 0;
+        }
+
+        .experience-item {
+            background: #2a2a2a;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 3px solid #d4ff00;
+        }
+
+        body.light-mode .experience-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 3px solid #000;
+        }
+
+        .experience-item .year {
+            color: #d4ff00;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        body.light-mode .experience-item .year {
+            color: #000;
+        }
+
+        .experience-item h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .experience-item .company {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #444;
+            border-radius: 3px;
+            margin-top: 15px;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #d4ff00;
+            border-radius: 3px;
+        }
+
+        body.light-mode .progress-fill {
+            background: #000;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* Advantages Grid */
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .advantage-card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        body.light-mode .advantage-card {
+            background: #fff;
+            border-color: #e0e0e0;
+        }
+
+        .advantage-card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .advantage-card h3 {
+            font-size: 28px;
+            color: #d4ff00;
+        }
+
+        body.light-mode .advantage-card h3 {
+            color: #000;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .blog-card {
+            background: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        body.light-mode .blog-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-card-content {
+            padding: 20px;
+        }
+
+        .blog-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .blog-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #d4ff00;
+            color: #000;
+            font-size: 11px;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .service-card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        body.light-mode .service-card {
+            background: #fff;
+            border-color: #e0e0e0;
+        }
+
+        .service-card .icon {
+            width: 50px;
+            height: 50px;
+            background: #333;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        body.light-mode .service-card .icon {
+            background: #e0e0e0;
+            color: #000;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .testimonial-card {
+            background: #2a2a2a;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            position: relative;
+        }
+
+        body.light-mode .testimonial-card {
+            background: #fff;
+            border-color: #e0e0e0;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .author-info h4 {
+            font-size: 16px;
+        }
+
+        .stars {
+            color: #d4ff00;
+            font-size: 14px;
+        }
+
+        body.light-mode .stars {
+            color: #000;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #d4ff00;
+        }
+
+        body.light-mode .quote-icon {
+            color: #000;
+        }
+
+        /* Pricing Tables */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .pricing-card {
+            background: #2a2a2a;
+            padding: 35px;
+            border-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        body.light-mode .pricing-card {
+            background: #fff;
+            border-color: #e0e0e0;
+        }
+
+        .pricing-card h3 {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        .price span {
+            font-size: 18px;
+            color: #999;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .price-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .price-features li::before {
+            content: "▸ ";
+            color: #d4ff00;
+        }
+
+        body.light-mode .price-features li::before {
+            color: #000;
+        }
+
+        .btn-package {
+            width: 100%;
+            padding: 14px;
+            background: #d4ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Brands */
+        .brands-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .brand-logo {
+            padding: 20px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80px;
+        }
+
+        body.light-mode .brand-logo {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .portfolio-item {
+            background: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body.light-mode .portfolio-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .portfolio-info {
+            padding: 20px;
+        }
+
+        .portfolio-info .category {
+            color: #999;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .portfolio-info h3 {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        .portfolio-large {
+            grid-column: span 2;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        body.light-mode .form-group input,
+        body.light-mode .form-group textarea {
+            background: #fff;
+            border-color: #ccc;
+            color: #000;
+        }
+
+        .form-group textarea {
+            grid-column: span 2;
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .btn-submit {
+            padding: 14px 40px;
+            background: #d4ff00;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         /* Footer */
         footer {
-            background: rgba(10, 14, 39, 0.9);
             text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-            border-top: 2px solid rgba(100, 200, 255, 0.3);
-            position: relative;
-            z-index: 1;
+            padding: 40px 0;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+        }
+
+        body.light-mode footer {
+            border-top-color: #ddd;
+        }
+
+        footer .logo {
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
         footer p {
-            color: #a0d8ff;
-            margin-bottom: 0; /* FIX: removes extra bottom margin inside footer */
+            color: #666;
+            font-size: 12px;
         }
 
-        /* Mobile */
+        /* Responsive */
         @media (max-width: 768px) {
-            header h1 { font-size: 2rem; }
-            nav ul { flex-direction: column; align-items: center; gap: 0.5rem; } /* FIX: added align-items center for proper centering on mobile */
-            .container { padding: 1rem; }
+            .profile-section {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid,
+            .advantages-grid,
+            .blog-grid,
+            .services-grid,
+            .testimonials,
+            .pricing-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .brands-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio-large {
+                grid-column: span 1;
+            }
         }
     </style>
 </head>
 <body>
-
-    <div class="stars" id="stars"></div>
-
-    <header>
-        <h1>Coen Howerter</h1>
-        <p>Software Developer &amp; Space Enthusiast</p>
+    <!-- Header -->
+    <header class="container">
+        <div class="logo">HOWERTER</div>
+        <div class="time">09:19</div>
+        <button class="dark-light">Dark / Light ☀️</button>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
+    <!-- Profile & Main Content -->
     <div class="container">
+        <div class="profile-section">
+            <!-- Profile Card -->
+            <aside class="profile-card">
+                <h2>Coen Howerter</h2>
+                <p class="role">Astrobiologist & Physicist</p>
+                <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I'm a passionate software developer with a love for exploring the intersection of technology and the cosmos. I build clean, efficient, and creative solutions.</p>
-            <p>When I'm not coding, you'll find me stargazing or tinkering with new ideas.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project Alpha</h3>
-                <p>A full-stack web application that does something amazing. Built with modern technologies and a focus on user experience.</p>
-                <p><a href="https://github.com/yourusername/project-alpha" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
-                <!-- FIX: added target="_blank" + rel="noopener noreferrer" for security on external links -->
-            </div>
-            <div class="project-card">
-                <h3>Project Beta</h3>
-                <p>An open-source tool that solves a real-world problem. Contributions welcome!</p>
-                <p><a href="https://github.com/yourusername/project-beta" target="_blank" rel="noopener noreferrer">View on GitHub →</a></p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">HTML &amp; CSS</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">REST APIs</span>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>✉</span>
-                    <a href="mailto:you@example.com">you@example.com</a>
+                <div class="contact-info">
+                    <p>📧 coenhowerter@gmail.com</p>
+                    <p>📱 +1(561)-613-8675</p>
                 </div>
-                <div class="contact-item">
-                    <span>🐙</span>
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
-                </div>
-                <div class="contact-item">
-                    <span>💼</span>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
-                </div>
-            </div>
-        </section>
 
+                <div class="social-links">
+                    <a href="#">in</a>
+                    <a href="#">git</a>
+                    <a href="#">K</a>
+                </div>
+
+                <button class="btn-download">Download CV</button>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- About Section -->
+                <span class="section-badge">📋 About</span>
+                <h1 class="section-title">Hi There! I'm a<br>Astrobiologist & Physicist</h1>
+                <p style="color: #999; margin-bottom: 30px;">
+                    I am a student at Florida Institute of Technology working towards a degree in theoretical Astrobiology & Physics. Currently, I am working towards developing a device that uses polarized light to identify the 'handedness' of a optically active molecule. I am also a online tutor that specializes in Math, Chemistry, and Physics. If your here to sign up for tutoring make sure to check my contact me section and include the topic, and a specific problem I can model the session after.
+                </p>
+
+                <!-- Personal Info -->
+                <span class="section-badge" style="margin-top: 40px;">📄 Resume</span>
+                <h2 class="section-title">STEM Tutoring</h2>
+                <p style="color: #999; margin-bottom: 30px;">
+                     Since starting my journey as an independent creator and soon working as an entrepreneur, I've done remote work for organizations, consulted for initial-ups, and collaborated with respected people to provide best product solutions.
+                </p>
+
+                <h3 style="margin-bottom: 20px;">Personal Info:</h3>
+                <div class="info-grid">
+                    <div class="info-item">First Name: Coen</div>
+                    <div class="info-item">Last Name: Howerter</div>
+                    <div class="info-item">Email: coenhowerter@gmail.com</div>
+                    <div class="info-item">Nationality: Indonesia</div>
+                    <div class="info-item">Education: Undergraduate</div>
+                    <div class="info-item">Languages: English</div>
+                </div>
+
+                <!-- Working Experience -->
+                <h2 class="section-title">Working <span>Experience</span></h2>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <p class="year">2022 - 2025</p>
+                        <h3>Framer Designer & Developer</h3>
+                        <p class="company">Uklo Studio ITC Company</p>
+                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>90%</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="year">2020 - 2022</p>
+                        <h3>Web Application Manager</h3>
+                        <p class="company">Uklo Company</p>
+                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>80%</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="year">2019 - 2015</p>
+                        <h3>Front-End WordPress Developer</h3>
+                        <p class="company">Uklo Company</p>
+                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educational Qualifications -->
+                <h2 class="section-title" style="margin-top: 60px;">Educational <span>Qualifications</span></h2>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <p class="year">May 2015-2020</p>
+                        <h3>Software Engineer</h3>
+                        <p class="company">Carnegie Mellon University</p>
+                        <p style="color: #999;">We give women and minorities all over America the skills and educational training they need to obtain a livable livelihood of achievement and pursue the career goals...</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 95%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>95%</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="year">2012-2015</p>
+                        <h3>Bachelor of Computer Science</h3>
+                        <p class="company">Ultra Luna Company</p>
+                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>80%</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <p class="year">2010-2013</p>
+                        <h3>Masters of Sciences</h3>
+                        <p class="company">University of Oregon</p>
+                        <p style="color: #999;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Featured and popular products are the best-selling items for your product.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>Performance</span>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Advantages -->
+                <h2 class="section-title" style="margin-top: 60px;">My <span>Advantages</span></h2>
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="icon">🎨</div>
+                        <h3>28%</h3>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon">⚛️</div>
+                        <h3>24%</h3>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon">🖥️</div>
+                        <h3>27%</h3>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon">✓</div>
+                        <h3>23%</h3>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon">💎</div>
+                        <h3>22%</h3>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="icon">📱</div>
+                        <h3>27%</h3>
+                    </div>
+                </div>
+
+                <!-- Blog Section -->
+                <span class="section-badge" style="margin-top: 60px;">📝 Blog</span>
+                <h2 class="section-title">Visit My Blog And Leave Your<br>Feedback My <span>Blog</span></h2>
+
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog">
+                        <div class="blog-card-content">
+                            <h3>Secondary Research Might Come From Reports Found On The Website.</h3>
+                            <span class="blog-badge">Read More</span>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog">
+                        <div class="blog-card-content">
+                            <h3>Consider Adding A Survey Form To Your Website Or Sending Customers.</h3>
+                            <span class="blog-badge">Read More</span>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog">
+                        <div class="blog-card-content">
+                            <h3>Surveys Are One Of The Most Effective Ways To Conduct Business.</h3>
+                            <span class="blog-badge">Read More</span>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <img src="https://via.placeholder.com/400x200" alt="Blog">
+                        <div class="blog-card-content">
+                            <h3>Surveys Allow You From Prospective And Existing Customers.</h3>
+                            <span class="blog-badge">Read More</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <span class="section-badge" style="margin-top: 60px;">🔧 Services</span>
+                <h2 class="section-title">All the general services that<br>I provide to <span>clients</span></h2>
+                <p style="color: #999; margin-bottom: 30px;">
+                    Since starting my journey as an independent creator and soon working as an entrepreneur, I've done remote work for organizations, consulted for new companies, and collaborated with respected individuals to create best products that could.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon">{ }</div>
+                        <h3>Front-end Development</h3>
+                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">⚙️</div>
+                        <h3>Back-end Development</h3>
+                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">📊</div>
+                        <h3>Planning and Strategy</h3>
+                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon">🎨</div>
+                        <h3>(UX) Design</h3>
+                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <h2 class="section-title" style="margin-top: 60px;">What People <span>Says?</span></h2>
+
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"I wouldn't had the pleasure of having Estrada for my products. Sincerely, it went very well, I wanted to show you. Pleasant of having and I will always get you for me..."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Author">
+                            <div class="author-info">
+                                <h4>Larry N. Alexandre</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="quote-icon">"</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"I had the pleasure of developing with a personal front and present-day to his work and I wish every group I work of success and would..."</p>
+                        <div class="testimonial-author">
+                            <img src="https://via.placeholder.com/50" alt="Author">
+                            <div class="author-info">
+                                <h4>Neil E. Saulter</h4>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="quote-icon">"</div>
+                    </div>
+                </div>
+
+                <!-- Pricing Section -->
+                <h2 class="section-title" style="margin-top: 60px;">A Collection For Web<br>Apps Pricing <span>Tables</span></h2>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>REGULAR PLAN</h3>
+                        <div class="price">$29.99 <span>/Month</span></div>
+                        <ul class="price-features">
+                            <li>Simple Portfolio Website</li>
+                            <li>Responsive Design</li>
+                            <li>Integration With Wix-Social Or Intractable</li>
+                            <li>Themes Selective Based On Specific...</li>
+                            <li>2 Months</li>
+                        </ul>
+                        <button class="btn-package">Pick This Package</button>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>PREMIUM PLAN</h3>
+                        <div class="price">$49.79 <span>/Month</span></div>
+                        <ul class="price-features">
+                            <li>All Features From The Basic Package</li>
+                            <li>Custom Domain Setup</li>
+                            <li>Project Showcase With Exterminators</li>
+                            <li>Advanced Customization Options</li>
+                            <li>SEO Optimization</li>
+                        </ul>
+                        <button class="btn-package">Pick This Package</button>
+                    </div>
+                </div>
+
+                <!-- Brands Section -->
+                <h2 class="section-title" style="margin-top: 60px;">WORK WITH 60+<br>BRANDS <span>WORLDWIDE</span></h2>
+
+                <div class="brands-grid">
+                    <div class="brand-logo">Brand 1</div>
+                    <div class="brand-logo">Brand 2</div>
+                    <div class="brand-logo">Brand 3</div>
+                    <div class="brand-logo">Brand 4</div>
+                    <div class="brand-logo">Brand 5</div>
+                    <div class="brand-logo">Brand 6</div>
+                </div>
+
+                <!-- Portfolio Section -->
+                <span class="section-badge" style="margin-top: 60px;">🎯 Portfolio</span>
+                <h2 class="section-title">Never Compromise For Our<br>Portfolio <span>Quality!</span></h2>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
+                        <div class="portfolio-info">
+                            <p class="category">Mobile Application</p>
+                            <h3>A Vibrant And Colorful Mobile Application</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
+                        <div class="portfolio-info">
+                            <p class="category">Web Design & Development</p>
+                            <h3>Flexible And Versatile Web Application Template</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portfolio-large">
+                        <img src="https://via.placeholder.com/1000x300" alt="Portfolio">
+                        <div class="portfolio-info">
+                            <p class="category">Mobile Application</p>
+                            <h3>An All-In-One Mobile Application Template That Combines Multiple Functionalities Into A Cohesive.</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
+                        <div class="portfolio-info">
+                            <p class="category">Mobile Application</p>
+                            <h3>A Pixel-Perfect Mobile Application Template</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
+                        <div class="portfolio-info">
+                            <p class="category">Web Design & Development</p>
+                            <h3>A Sleek And Modern Web Application Designed</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <span class="section-badge" style="margin-top: 60px;">📞 Contact</span>
+                <h2 class="section-title">Let's Work <span>Together!</span></h2>
+
+                <form class="contact-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="url" placeholder="Website URL">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Enter Your Message"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </main>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Your Name. Built with ☕ and curiosity.</p>
+    <!-- Footer -->
+    <footer class="container">
+        <div class="logo">HOWERTER</div>
+        <p>Copyright © HOWERTER © 2025-2026. All rights reserved</p>
     </footer>
 
     <script>
-        // Star background
-        const starsContainer = document.getElementById('stars');
-        for (let i = 0; i < 120; i++) {
-            const star = document.createElement('div');
-            star.className = 'star';
-            const size = Math.random() * 3 + 1;
-            star.style.cssText = `width:${size}px; height:${size}px; top:${Math.random() * 100}%; left:${Math.random() * 100}%; animation-delay:${Math.random() * 3}s; animation-duration:${2 + Math.random() * 3}s;`;
-            starsContainer.appendChild(star);
-        }
+        // Simple dark/light mode toggle
+        document.querySelector('.dark-light').addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
 
-        // FIX: smooth scrolling for nav anchor links
-        document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
+            // Update button text
+            if (document.body.classList.contains('light-mode')) {
+                this.textContent = 'Dark / Light 🌙';
+            } else {
+                this.textContent = 'Dark / Light ☀️';
+            }
         });
-    </script>
 
+        // Update time
+        function updateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.querySelector('.time').textContent = `${hours}:${minutes}`;
+        }
+        updateTime();
+        setInterval(updateTime, 60000);
+    </script>
 </body>
 </html>
