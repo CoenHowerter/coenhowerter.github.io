@@ -753,12 +753,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="container">
+    <!--<header class="container">
         <div class="logo">HOWERTER</div>
         <div class="time">09:19</div>
         <button class="dark-light">Dark / Light ☀️</button>
     </header>
-
+-->
+        <button class="dark-light">Dark / Light ☀️</button>
     <!-- Profile & Main Content -->
     <div class="container">
         <div class="profile-section">
