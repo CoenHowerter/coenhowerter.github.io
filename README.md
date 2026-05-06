@@ -860,35 +860,14 @@
                 </div>
 
                 <!-- Blog Section -->
-                <span class="section-badge" style="margin-top: 60px;">📝 Blog</span>
-                <h2 class="section-title">Visit My Blog And Leave Your<br>Feedback My <span>Blog</span></h2>
+                <span class="section-badge" style="margin-top: 60px;">Publications</span>
+                <h2 class="section-title">Read my Published Papers for Free</h2>
 
                 <div class="blog-grid">
                     <div class="blog-card">
                         <img src="https://via.placeholder.com/400x200" alt="Blog">
                         <div class="blog-card-content">
-                            <h3>Secondary Research Might Come From Reports Found On The Website.</h3>
-                            <span class="blog-badge">Read More</span>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Blog">
-                        <div class="blog-card-content">
-                            <h3>Consider Adding A Survey Form To Your Website Or Sending Customers.</h3>
-                            <span class="blog-badge">Read More</span>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Blog">
-                        <div class="blog-card-content">
-                            <h3>Surveys Are One Of The Most Effective Ways To Conduct Business.</h3>
-                            <span class="blog-badge">Read More</span>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <img src="https://via.placeholder.com/400x200" alt="Blog">
-                        <div class="blog-card-content">
-                            <h3>Surveys Allow You From Prospective And Existing Customers.</h3>
+                            <h3>Coming Soon eta <1 year</h3>
                             <span class="blog-badge">Read More</span>
                         </div>
                     </div>
