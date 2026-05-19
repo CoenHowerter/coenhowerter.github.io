@@ -874,22 +874,22 @@
                 </div>
 
                 <!-- Services Section -->
-                <span class="section-badge" style="margin-top: 60px;">🔧 Services</span>
-                <h2 class="section-title">All the general services that<br>I provide to <span>clients</span></h2>
+                <span class="section-badge" style="margin-top: 60px;">Projects</span>
+                <h2 class="section-title">Projects</h2>
                 <p style="color: #999; margin-bottom: 30px;">
-                    Since starting my journey as an independent creator and soon working as an entrepreneur, I've done remote work for organizations, consulted for new companies, and collaborated with respected individuals to create best products that could.
+                   
                 </p>
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="icon">{ }</div>
-                        <h3>Front-end Development</h3>
-                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                        <div class="icon">~~~</div>
+                        <h3>Double Slit With Chiral Molecules</h3>
+                        <p>Identifying Sterochemistry of Simple Optically Active Molecules Using Polarized Light</p>
                     </div>
                     <div class="service-card">
-                        <div class="icon">⚙️</div>
-                        <h3>Back-end Development</h3>
-                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
+                        <div class="icon">{ }</div>
+                        <h3>LibraryPy</h3>
+                        <p>Database with functions of 50+ Python libraries</p>
                     </div>
                     <div class="service-card">
                         <div class="icon">📊</div>
