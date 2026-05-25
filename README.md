@@ -752,18 +752,9 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <!--<header class="container">
-        <div class="logo">HOWERTER</div>
-        <div class="time">09:19</div>
-        <button class="dark-light">Dark / Light ☀️</button>
-    </header>
--->
-        <button class="dark-light">Dark / Light ☀️</button>
-    <!-- Profile & Main Content -->
+    <button class="dark-light">Dark / Light ☀️</button>
     <div class="container">
         <div class="profile-section">
-            <!-- Profile Card -->
             <aside class="profile-card">
                 <h2>Coen Howerter</h2>
                 <p class="role">Astrobiologist & Physicist</p>
@@ -782,23 +773,19 @@
                 <button class="btn-download">Download CV</button>
             </aside>
 
-            <!-- Main Content -->
             <main class="main-content">
-                <!-- About Section -->
                 <span class="section-badge">📋 About</span>
                 <h1 class="section-title">Hi There! I'm a<br>Astrobiologist & Physicist</h1>
                 <p style="color: #999; margin-bottom: 30px;">
                     I am a student at Florida Institute of Technology working towards a degree in theoretical Astrobiology & Physics. Currently, I am working towards developing a device that uses polarized light to identify the 'handedness' of a optically active molecule. I am also a online tutor that specializes in Math, Chemistry, and Physics. If your here to sign up for tutoring make sure to check my contact me section and include the topic, and a specific problem I can model the session after.
                 </p>
 
-                <!-- Personal Info -->
                 <span class="section-badge" style="margin-top: 40px;">📄 Resume</span>
                 <h2 class="section-title">STEM Tutoring - Mission Statement</h2>
                 <p style="color: #999; margin-bottom: 30px;">
                      My mission is to eliminate the financial barrier for STEM education in youth through non-cost online tutoring. 
                 </p>
 
-                <!-- Working Experience -->
                 <h2 class="section-title">Working <span>Experience</span></h2>
 
                 <div class="experience-list">
@@ -808,7 +795,6 @@
                     </div>
                 </div>
 
-                <!-- Educational Qualifications -->
                 <h2 class="section-title" style="margin-top: 60px;">Educational <span>Qualifications</span></h2>
 
                 <div class="experience-list">
@@ -830,7 +816,6 @@
                     </div>
                 </div>
 
-                <!-- My Advantages -->
                 <h2 class="section-title" style="margin-top: 60px;">My <span>Advantages</span></h2>
                 <div class="advantages-grid">
                     <div class="advantage-card">
@@ -859,7 +844,6 @@
                     </div>
                 </div>
 
-                <!-- Blog Section -->
                 <span class="section-badge" style="margin-top: 60px;">Publications</span>
                 <h2 class="section-title">Read my Published Papers for Free</h2>
 
@@ -873,7 +857,6 @@
                     </div>
                 </div>
 
-                <!-- Services Section -->
                 <span class="section-badge" style="margin-top: 60px;">Projects</span>
                 <h2 class="section-title">Projects</h2>
                 <p style="color: #999; margin-bottom: 30px;">
@@ -881,21 +864,21 @@
                 </p>
 
                 <div class="services-grid">
-                    <div class="service-card">
+                    <a href="https://github.com/CoenHowerter/Coming-Soon" class="service-card" style="text-decoration: none; color: inherit; display: block;">
                         <div class="icon">~~~</div>
                         <h3>Double Slit With Chiral Molecules</h3>
                         <p>Identifying Sterochemistry of Simple Optically Active Molecules Using Polarized Light</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon"> < * > </div>
+                    </a>
+                    <a href="https://github.com/CoenHowerter/Perdicting-F1-Stops" class="service-card" style="text-decoration: none; color: inherit; display: block;">
+                        <div class="icon"> <> </div>
                         <h3>Perdicting F1 Stops</h3>
                         <p>Developed a PyTorch neural network to predict Formula 1 pit stops for the Kaggle Tabular Playground Series</p>
-                    </div>
-                    <div class="service-card">
+                    </a>
+                    <a href="https://github.com/CoenHowerter/LibraryPy" class="service-card" style="text-decoration: none; color: inherit; display: block;">
                         <div class="icon">{ }</div>
                         <h3>LibraryPy</h3>
                         <p>Database with functions of 50+ Python libraries</p>
-                    </div>
+                    </a>
                     <div class="service-card">
                         <div class="icon">🎨</div>
                         <h3>(UX) Design</h3>
@@ -903,7 +886,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonials -->
                 <h2 class="section-title" style="margin-top: 60px;">What People <span>Says?</span></h2>
 
                 <div class="testimonials">
@@ -931,7 +913,6 @@
                     </div>
                 </div>
 
-                <!-- Pricing Section -->
                 <h2 class="section-title" style="margin-top: 60px;">A Collection For Web<br>Apps Pricing <span>Tables</span></h2>
 
                 <div class="pricing-grid">
@@ -961,7 +942,6 @@
                     </div>
                 </div>
 
-                <!-- Brands Section -->
                 <h2 class="section-title" style="margin-top: 60px;">WORK WITH 60+<br>BRANDS <span>WORLDWIDE</span></h2>
 
                 <div class="brands-grid">
@@ -973,7 +953,6 @@
                     <div class="brand-logo">Brand 6</div>
                 </div>
 
-                <!-- Portfolio Section -->
                 <span class="section-badge" style="margin-top: 60px;">🎯 Portfolio</span>
                 <h2 class="section-title">Never Compromise For Our<br>Portfolio <span>Quality!</span></h2>
 
@@ -1015,7 +994,6 @@
                     </div>
                 </div>
 
-                <!-- Contact Section -->
                 <span class="section-badge" style="margin-top: 60px;">📞 Contact</span>
                 <h2 class="section-title">Let's Work <span>Together!</span></h2>
 
@@ -1024,7 +1002,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="container">
         <div class="logo">HOWERTER</div>
         <p>HOWERTER</p>
