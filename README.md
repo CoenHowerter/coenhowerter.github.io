@@ -887,14 +887,14 @@
                         <p>Identifying Sterochemistry of Simple Optically Active Molecules Using Polarized Light</p>
                     </div>
                     <div class="service-card">
+                        <div class="icon"> < * > </div>
+                        <h3>Perdicting F1 Stops</h3>
+                        <p>Developed a PyTorch neural network to predict Formula 1 pit stops for the Kaggle Tabular Playground Series</p>
+                    </div>
+                    <div class="service-card">
                         <div class="icon">{ }</div>
                         <h3>LibraryPy</h3>
                         <p>Database with functions of 50+ Python libraries</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="icon">📊</div>
-                        <h3>Planning and Strategy</h3>
-                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
                     </div>
                     <div class="service-card">
                         <div class="icon">🎨</div>
