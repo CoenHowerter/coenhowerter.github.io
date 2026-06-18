@@ -879,11 +879,10 @@
                         <h3>LibraryPy</h3>
                         <p>Database with functions of 50+ Python libraries</p>
                     </a>
-                    <div class="service-card">
-                        <div class="icon">🎨</div>
-                        <h3>(UX) Design</h3>
-                        <p>Capitalize on your concepts, and manage with capable individuals to make comprehend items for both business and consumer...</p>
-                    </div>
+                   <a href="https://github.com/CoenHowerter/Nexus" class="service-card" style="text-decoration: none; color: inherit; display: block;">
+                        <div class="icon"> |\| </div>
+                        <h3>Nexus</h3>
+                        <p>At home auditory assistant with capabilities to take photos</p>
                 </div>
 
                 <h2 class="section-title" style="margin-top: 60px;">What People <span>Says?</span></h2>
