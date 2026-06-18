@@ -867,11 +867,11 @@
                     <a href="https://github.com/CoenHowerter/Coming-Soon" class="service-card" style="text-decoration: none; color: inherit; display: block;">
                         <div class="icon">~~~</div>
                         <h3>Double Slit With Chiral Molecules</h3>
-                        <p>Identifying Sterochemistry of Simple Optically Active Molecules Using Polarized Light</p>
+                        <p>Identifying Stereochemistry of Simple Optically Active Molecules Using Polarized Light</p>
                     </a>
                     <a href="https://github.com/CoenHowerter/Perdicting-F1-Stops" class="service-card" style="text-decoration: none; color: inherit; display: block;">
-                        <div class="icon"> <> </div>
-                        <h3>Perdicting F1 Stops</h3>
+                        <div class="icon">&lt;&gt;</div>
+                        <h3>Predicting F1 Stops</h3>
                         <p>Developed a PyTorch neural network to predict Formula 1 pit stops for the Kaggle Tabular Playground Series</p>
                     </a>
                     <a href="https://github.com/CoenHowerter/LibraryPy" class="service-card" style="text-decoration: none; color: inherit; display: block;">
@@ -883,6 +883,7 @@
                         <div class="icon"> |\| </div>
                         <h3>Nexus</h3>
                         <p>At home auditory assistant with capabilities to take photos</p>
+                    </a>
                 </div>
 
                 <h2 class="section-title" style="margin-top: 60px;">What People <span>Says?</span></h2>
