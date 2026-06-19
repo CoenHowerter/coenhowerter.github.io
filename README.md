@@ -887,63 +887,8 @@
                    
                 </div>
 
-                <h2 class="section-title" style="margin-top: 60px;">What People <span>Says?</span></h2>
-
-                <div class="testimonials">
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"I wouldn't had the pleasure of having Estrada for my products. Sincerely, it went very well, I wanted to show you. Pleasant of having and I will always get you for me..."</p>
-                        <div class="testimonial-author">
-                            <img src="https://via.placeholder.com/50" alt="Author">
-                            <div class="author-info">
-                                <h4>Larry N. Alexandre</h4>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <div class="quote-icon">"</div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="testimonial-text">"I had the pleasure of developing with a personal front and present-day to his work and I wish every group I work of success and would..."</p>
-                        <div class="testimonial-author">
-                            <img src="https://via.placeholder.com/50" alt="Author">
-                            <div class="author-info">
-                                <h4>Neil E. Saulter</h4>
-                                <div class="stars">★★★★★</div>
-                            </div>
-                        </div>
-                        <div class="quote-icon">"</div>
-                    </div>
-                </div>
-
-                <h2 class="section-title" style="margin-top: 60px;">A Collection For Web<br>Apps Pricing <span>Tables</span></h2>
-
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <h3>REGULAR PLAN</h3>
-                        <div class="price">$29.99 <span>/Month</span></div>
-                        <ul class="price-features">
-                            <li>Simple Portfolio Website</li>
-                            <li>Responsive Design</li>
-                            <li>Integration With Wix-Social Or Intractable</li>
-                            <li>Themes Selective Based On Specific...</li>
-                            <li>2 Months</li>
-                        </ul>
-                        <button class="btn-package">Pick This Package</button>
-                    </div>
-                    <div class="pricing-card">
-                        <h3>PREMIUM PLAN</h3>
-                        <div class="price">$49.79 <span>/Month</span></div>
-                        <ul class="price-features">
-                            <li>All Features From The Basic Package</li>
-                            <li>Custom Domain Setup</li>
-                            <li>Project Showcase With Exterminators</li>
-                            <li>Advanced Customization Options</li>
-                            <li>SEO Optimization</li>
-                        </ul>
-                        <button class="btn-package">Pick This Package</button>
-                    </div>
-                </div>
-
-                <h2 class="section-title" style="margin-top: 60px;">WORK WITH 60+<br>BRANDS <span>WORLDWIDE</span></h2>
+                
+                <h2 class="section-title" style="margin-top: 60px;">Skills</h2>
 
                 <div class="brands-grid">
                     <div class="brand-logo">Brand 1</div>
