@@ -872,15 +872,6 @@
                     <div class="brand-logo">Computational Modeling</div>
                     <div class="brand-logo">Astrophotagraphy & Optics</div>
                 </div>
-
-                <span class="section-badge" style="margin-top: 60px;">🎯 Portfolio</span>
-                <h2 class="section-title">Never Compromise For Our<br>Portfolio <span>Quality!</span></h2>
-
-
-                <span class="section-badge" style="margin-top: 60px;">📞 Contact</span>
-                <h2 class="section-title">Let's Work <span>Together!</span></h2>
-
-
             </main>
         </div>
     </div>
