@@ -816,34 +816,6 @@
                     </div>
                 </div>
 
-                <h2 class="section-title" style="margin-top: 60px;">My <span>Advantages</span></h2>
-                <div class="advantages-grid">
-                    <div class="advantage-card">
-                        <div class="icon">🎨</div>
-                        <h3>28%</h3>
-                    </div>
-                    <div class="advantage-card">
-                        <div class="icon">⚛️</div>
-                        <h3>24%</h3>
-                    </div>
-                    <div class="advantage-card">
-                        <div class="icon">🖥️</div>
-                        <h3>27%</h3>
-                    </div>
-                    <div class="advantage-card">
-                        <div class="icon">✓</div>
-                        <h3>23%</h3>
-                    </div>
-                    <div class="advantage-card">
-                        <div class="icon">💎</div>
-                        <h3>22%</h3>
-                    </div>
-                    <div class="advantage-card">
-                        <div class="icon">📱</div>
-                        <h3>27%</h3>
-                    </div>
-                </div>
-
                 <span class="section-badge" style="margin-top: 60px;">Publications</span>
                 <h2 class="section-title">Read my Published Papers for Free</h2>
 
@@ -891,12 +863,14 @@
                 <h2 class="section-title" style="margin-top: 60px;">Skills</h2>
 
                 <div class="brands-grid">
-                    <div class="brand-logo">Brand 1</div>
-                    <div class="brand-logo">Brand 2</div>
-                    <div class="brand-logo">Brand 3</div>
-                    <div class="brand-logo">Brand 4</div>
-                    <div class="brand-logo">Brand 5</div>
-                    <div class="brand-logo">Brand 6</div>
+                    <div class="brand-logo">Python</div>
+                    <div class="brand-logo">Latex documentation, MS Office</div>
+                    <div class="brand-logo">Data Collection</div>
+                    <div class="brand-logo">Machine Learning & Neural Networks</div>
+                    <div class="brand-logo">Troubleshooting & Systems Testing</div>
+                    <div class="brand-logo">3D Modeleing</div>
+                    <div class="brand-logo">Computational Modeling</div>
+                    <div class="brand-logo">Astrophotagraphy & Optics</div>
                 </div>
 
                 <span class="section-badge" style="margin-top: 60px;">🎯 Portfolio</span>
