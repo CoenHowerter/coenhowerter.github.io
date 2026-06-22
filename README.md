@@ -876,43 +876,6 @@
                 <span class="section-badge" style="margin-top: 60px;">🎯 Portfolio</span>
                 <h2 class="section-title">Never Compromise For Our<br>Portfolio <span>Quality!</span></h2>
 
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
-                        <div class="portfolio-info">
-                            <p class="category">Mobile Application</p>
-                            <h3>A Vibrant And Colorful Mobile Application</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
-                        <div class="portfolio-info">
-                            <p class="category">Web Design & Development</p>
-                            <h3>Flexible And Versatile Web Application Template</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item portfolio-large">
-                        <img src="https://via.placeholder.com/1000x300" alt="Portfolio">
-                        <div class="portfolio-info">
-                            <p class="category">Mobile Application</p>
-                            <h3>An All-In-One Mobile Application Template That Combines Multiple Functionalities Into A Cohesive.</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
-                        <div class="portfolio-info">
-                            <p class="category">Mobile Application</p>
-                            <h3>A Pixel-Perfect Mobile Application Template</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/500x300" alt="Portfolio">
-                        <div class="portfolio-info">
-                            <p class="category">Web Design & Development</p>
-                            <h3>A Sleek And Modern Web Application Designed</h3>
-                        </div>
-                    </div>
-                </div>
 
                 <span class="section-badge" style="margin-top: 60px;">📞 Contact</span>
                 <h2 class="section-title">Let's Work <span>Together!</span></h2>
